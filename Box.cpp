@@ -1,24 +1,16 @@
-class Shape 
-{
-	public:
-		void setWidth(int w)
-		{
-			width = w;
-		}
-		void setHeight(int h)
-		{
-			height = h;
-		}
-	protected:
-		int width;
-		int height;
-};
+#include "Box.hpp"
 
-class Rectangle: public Shape
+void Shape::setWidth(int w) 
 {
-	public:
-		int getArea()
-		{ 
-			return (width * height); 
-		}
-};
+	width = w;
+}
+
+void Shape::setHeight(int h)
+{
+	height = h;
+}
+
+int Rectangle::getArea()
+{ 
+	return (width * height); 
+}

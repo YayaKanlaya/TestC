@@ -1,5 +1,6 @@
 //#include "opencv2/core/core.hpp"
 #include <iostream>
+#include "Box.hpp"
 
 using namespace std;
 //using namespace cv;
@@ -7,7 +8,11 @@ using namespace std;
 int main(int,char**)
 {
 
-    cout << "M = " << endl << " TestC " << endl;
+    cout << "M = " << " TestC " << endl;
+	Rectangle r;
+	r.setWidth(10);
+	r.setHeight(5);
+	cout << r.getArea();
 	
 	return 0;
 }
